@@ -1,8 +1,6 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.ServerSocket;
 import java.net.Socket;
 
 public class EchoClient {
@@ -22,7 +20,7 @@ public class EchoClient {
             System.out.println(serverOutput.readLine());
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
